@@ -1,0 +1,116 @@
+/* Globalne stylizacje */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Czarny background */
+    color: #fff; /* Biały tekst */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Nagłówek */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ff0000; /* Czerwony nagłówek */
+}
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ff0000; /* Czerwony nagłówek */
+}
+
+
+/* Wyszukiwarka */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    font-size: 16px;
+    border: 1px solid #ff0000; /* Czerwony border */
+    border-radius: 5px;
+    background-color: #333; /* Ciemne tło dla inputu */
+    color: #fff; /* Biały tekst */
+}
+
+#search-input::placeholder {
+    color: #aaa; /* Jasnoszary placeholder */
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222; /* Ciemne tło tabeli */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0000; /* Czerwony nagłówek tabeli */
+    color: #fff; /* Biały tekst nagłówka tabeli */
+}
+
+tr:nth-child(even) {
+    background-color: #333; /* Ciemne tło dla parzystych wierszy */
+}
+
+tr:hover {
+    background-color: #444; /* Jaśniejsze tło dla wierszy po najechaniu */
+}
+
+/* Stylizacja obrazków */
+td img {
+    width: 100px; /* Ustaw stałą szerokość dla obrazków */
+    height: 100px; /* Ustaw stałą wysokość dla obrazków */
+    object-fit: cover; /* Przytnij obrazek, aby wypełniał całą przestrzeń */
+    border-radius: 5px; /* Zaokrąglone rogi dla obrazków */
+    display: block;
+    margin: 0 auto; /* Wyśrodkowanie obrazków w komórkach tabeli */
+}
+
+/* Linki */
+a {
+    color: #ff0000; /* Czerwony link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Podkreślenie linku po najechaniu */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    td img {
+        width: 80px; /* Zmniejszenie szerokości obrazków w widoku mobilnym */
+        height: 80px; /* Zmniejszenie wysokości obrazków w widoku mobilnym */
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    #search-input {
+        max-width: 100%;
+    }
+}
